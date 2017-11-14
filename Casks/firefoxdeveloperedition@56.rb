@@ -1,4 +1,4 @@
-cask 'firefoxdeveloperedition' do
+cask 'firefoxdeveloperedition@56' do
   version '56.0b12'
 
   language 'cs' do

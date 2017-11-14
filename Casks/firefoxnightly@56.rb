@@ -1,4 +1,4 @@
-cask 'firefoxnightly' do
+cask 'firefoxnightly@56' do
   version '56.0a1'
 
   language 'cs' do

@@ -1,4 +1,4 @@
-cask 'firefox-beta' do
+cask 'firefox-beta@56' do
   version '56.0b12'
 
   language 'cs' do
