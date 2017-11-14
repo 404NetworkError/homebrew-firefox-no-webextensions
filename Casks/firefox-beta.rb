@@ -21,6 +21,26 @@ cask 'firefox-beta' do
     'en-US'
   end
 
+  language 'es-AR' do
+    sha256 'd0aac06366a794291cd38d59950d517562fb689807d1c3ea9d78e3001d8303e1'
+    'es-AR'
+  end
+
+  language 'es-CL' do
+    sha256 '24ffbf7a16c69928db981887b6bdea7c08ff699fd912f5abdc101c283baded80'
+    'es-CL'
+  end
+
+  language 'es-ES' do
+    sha256 '0d76fed4b21313d3764019f8dccccb66adee79354a930f82bbcb60c28dfb8662'
+    'es-ES'
+  end
+
+  language 'fi' do
+    sha256 '15a245fd631b3c7ea8af54c93073ace953ac2dae2639ae4ca9677095121337b5'
+    'fi'
+  end
+
   language 'fr' do
     sha256 '75d81cd6485043b922902f8c1acb11b2df977516e2761fade361fbfd576f83f8'
     'fr'
@@ -29,6 +49,11 @@ cask 'firefox-beta' do
   language 'gl' do
     sha256 '2ba8e0b3f4b2bf2eb1fff93364e7cd78f719bcd2d8f7d7bf5266553322be8723'
     'gl'
+  end
+
+  language 'in' do
+    sha256 'b8ad46cc8a9d19156a0d0d01de4d0969cc770a17cbc06996629cb2470c60c6ea'
+    'hi-IN'
   end
 
   language 'it' do
@@ -49,6 +74,11 @@ cask 'firefox-beta' do
   language 'pl' do
     sha256 '1d0a14bd19bdc09bacff9094f1f9e56403c356007c70dc2546e26181b21ea2e5'
     'pl'
+  end
+
+  language 'pt-BR' do
+    sha256 '3043b99413a0216a8338c4331e10162741843a13f9aaa5ff2aa20d8fadfe1923'
+    'pt-BR'
   end
 
   language 'pt' do
@@ -84,7 +114,19 @@ cask 'firefox-beta' do
   app 'Firefox.app'
 
   zap delete: [
-                '~/Library/Application Support/Firefox',
+                '/Library/Logs/DiagnosticReports/firefox_*',
+                '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.mozilla.firefox.sfl*',
                 '~/Library/Caches/Firefox',
+                '~/Library/Caches/Mozilla/updates/Applications/Firefox',
+              ],
+      trash:  [
+                '~/Library/Application Support/Firefox',
+                '~/Library/Preferences/org.mozilla.firefox.plist',
+              ],
+      rmdir:  [
+                '~/Library/Application Support/Mozilla', # May also contain non-Firefox data
+                '~/Library/Caches/Mozilla/updates/Applications',
+                '~/Library/Caches/Mozilla/updates',
+                '~/Library/Caches/Mozilla',
               ]
 end
