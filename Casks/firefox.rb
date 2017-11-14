@@ -112,8 +112,6 @@ cask 'firefox' do
   name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/firefox/'
 
-  auto_updates true
-
   app 'Firefox.app'
 
   zap delete: [
