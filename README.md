@@ -4,13 +4,7 @@ This repository contains all Mozilla Firefox versions before the WebExtensions A
 ## Installation
 
 ```
-brew tap 404NetworkError/firefox-no-webextensions
-```
-
-## Usage
-
-```
-brew cask install <CASK>
+brew cask install 404NetworkError/firefox-no-webextensions/<CASK>
 ```
 
 ### Options for CASK
