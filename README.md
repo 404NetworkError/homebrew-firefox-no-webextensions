@@ -1,4 +1,24 @@
-# homebrew-firefox56
-Mozilla Firefox before the WebExtensions requirement.
+# homebrew-firefox-no-webextensions
+This repository contains all Mozilla Firefox versions before the WebExtensions API requirement.
 
-This is a cask for Homebrew.
+## Installation
+
+```
+brew tap 404NetworkError/firefox-no-webextensions
+```
+
+## Usage
+
+```
+brew cask install <CASK>
+```
+
+### Options for CASK
+
+```
+firefox
+firefox-beta
+firefoxnightly
+firefoxdeveloperedition
+firefox-esr
+```
