@@ -107,8 +107,6 @@ cask 'firefox@56' do
   end
 
   url "https://ftp.mozilla.org/pub/firefox/releases/#{version}/mac/#{language}/Firefox%20#{version}.dmg"
-  appcast "https://aus5.mozilla.org/update/3/Firefox/#{version}/0/Darwin_x86_64-gcc3-u-i386-x86_64/en-US/release/Darwin%2015.3.0/default/default/update.xml?force=1",
-          checkpoint: 'f2ac1ccfd7f5342bdab5589bb5d803b45e5a5fb31997a3503d2f9e72efa4cf55'
   name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/firefox/'
 
