@@ -33,8 +33,8 @@ cask 'firefoxnightly@56' do
 
   app 'FirefoxNightly.app'
 
-  zap delete: [
-                '~/Library/Application Support/Firefox',
-                '~/Library/Caches/Firefox',
-              ]
+  zap trash: [
+               '~/Library/Application Support/Firefox',
+               '~/Library/Caches/Firefox',
+             ]
 end
