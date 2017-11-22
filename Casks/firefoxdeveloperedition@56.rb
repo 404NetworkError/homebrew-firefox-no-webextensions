@@ -44,7 +44,7 @@ cask 'firefoxdeveloperedition@56' do
   # download-installer.cdn.mozilla.net/pub/devedition/releases was verified as official when first introduced to the cask
   url "https://download-installer.cdn.mozilla.net/pub/devedition/releases/#{version}/mac/#{language}/Firefox%20#{version}.dmg"
   appcast 'https://download-installer.cdn.mozilla.net/pub/devedition/releases/',
-          checkpoint: '03ed2da848c0ae523ba3749f41a9bef10d8ce5da5cc8128e763ca11b5cee85f7'
+          checkpoint: '49e3db55679be71868aadf43a51d3e58013bbf9a7d49524d1e07f033a2cf4652'
   name 'Mozilla Firefox Developer Edition'
   homepage 'https://www.mozilla.org/firefox/developer/'
 
