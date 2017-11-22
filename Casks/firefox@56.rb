@@ -66,6 +66,11 @@ cask 'firefox@56' do
     'ja-JP-mac'
   end
 
+  language 'ko' do
+    sha256 'ce5673d4f68358f94b0e011da4655cb90368fc654b273263edcbbbc8c227c3fb'
+    'ko'
+  end
+
   language 'nl' do
     sha256 '4b7b137c55714a37a9974b85b7d790c26e44cd474b7be4ee7a033436779b63e9'
     'nl'
@@ -106,7 +111,8 @@ cask 'firefox@56' do
     'zh-CN'
   end
 
-  url "https://ftp.mozilla.org/pub/firefox/releases/#{version}/mac/#{language}/Firefox%20#{version}.dmg"
+  # download-installer.cdn.mozilla.net/pub/firefox/releases was verified as official when first introduced to the cask
+  url "https://download-installer.cdn.mozilla.net/pub/firefox/releases/#{version}/mac/#{language}/Firefox%20#{version}.dmg"
   name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/firefox/'
 
