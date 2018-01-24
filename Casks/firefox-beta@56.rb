@@ -110,6 +110,11 @@ cask 'firefox-beta@56' do
   name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/firefox/channel/desktop/#beta'
 
+  conflicts_with cask: [
+                         'firefox',
+                         'firefox-esr',
+                       ]
+
   app 'Firefox.app'
 
   zap trash: [

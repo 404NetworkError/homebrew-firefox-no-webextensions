@@ -81,14 +81,14 @@ cask 'firefox@56' do
     'pl'
   end
 
-  language 'pt' do
-    sha256 '7e328d2bb73aec87122419684b7c6a9cc1d6d891b3d7b0514641222ffb50c364'
-    'pt-PT'
-  end
-
   language 'pt-BR' do
     sha256 'da7920871e111ea9b39774dbe102163372b9a33d510092ead960c510a7dbdbab '
     'pt-BR'
+  end
+
+  language 'pt' do
+    sha256 '7e328d2bb73aec87122419684b7c6a9cc1d6d891b3d7b0514641222ffb50c364'
+    'pt-PT'
   end
 
   language 'ru' do
@@ -115,6 +115,11 @@ cask 'firefox@56' do
   url "https://download-installer.cdn.mozilla.net/pub/firefox/releases/#{version}/mac/#{language}/Firefox%20#{version}.dmg"
   name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/firefox/'
+
+  conflicts_with cask: [
+                         'firefox-beta',
+                         'firefox-esr',
+                       ]
 
   app 'Firefox.app'
 
