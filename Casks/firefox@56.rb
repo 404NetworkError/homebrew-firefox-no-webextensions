@@ -82,7 +82,7 @@ cask 'firefox@56' do
   end
 
   language 'pt-BR' do
-    sha256 'da7920871e111ea9b39774dbe102163372b9a33d510092ead960c510a7dbdbab '
+    sha256 'da7920871e111ea9b39774dbe102163372b9a33d510092ead960c510a7dbdbab'
     'pt-BR'
   end
 
@@ -94,6 +94,11 @@ cask 'firefox@56' do
   language 'ru' do
     sha256 '169fe1f6f58ffa94b1c4c7417e38a1af4b5cd0f3bb8634b183e66d4f6f1f111b'
     'ru'
+  end
+
+  language 'tr' do
+    sha256 '769e431abc2d0b0cfb640b20434f879624dcd2ee6fd6c1d14b48dda810de3309'
+    'tr'
   end
 
   language 'uk' do
