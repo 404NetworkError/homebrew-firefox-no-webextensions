@@ -481,5 +481,5 @@ cask 'firefoxdeveloperedition@56' do
   name 'Mozilla Firefox Developer Edition'
   homepage 'https://www.mozilla.org/firefox/developer/'
 
-  app 'FirefoxDeveloperEdition.app'
+  app 'FirefoxDeveloperEdition.app', target: 'FirefoxDeveloperEdition-56.app'
 end

@@ -472,7 +472,7 @@ cask 'firefox-esr@52' do
                          'firefox-beta',
                        ]
 
-  app 'Firefox.app'
+  app 'Firefox.app', target: 'Firefox-ESR-52.app'
 
   zap trash: [
                '~/Library/Application Support/Firefox',

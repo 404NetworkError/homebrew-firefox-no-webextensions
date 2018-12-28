@@ -501,7 +501,7 @@ cask 'firefoxnightly@56' do
   name 'Mozilla Firefox'
   homepage 'https://www.mozilla.org/firefox/channel/desktop/#nightly'
 
-  app 'FirefoxNightly.app'
+  app 'FirefoxNightly.app', target: 'FirefoxNightly-56.app'
 
   zap trash: [
                '~/Library/Application Support/Firefox',

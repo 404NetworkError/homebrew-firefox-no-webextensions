@@ -486,7 +486,7 @@ cask 'firefox@56' do
                          'firefox-esr',
                        ]
 
-  app 'Firefox.app'
+  app 'Firefox.app', target: 'Firefox-56.app'
 
   zap trash: [
                '/Library/Logs/DiagnosticReports/firefox_*',
